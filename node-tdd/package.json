@@ -1,0 +1,29 @@
+{
+  "name": "node-tdd",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "ava test/**/*.spec.js -dd",
+    "watch": "ava test/**/*.spec.js -dd -w"
+  },
+  "author": "Stephen Kawaguchi",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-3": "^6.16.0",
+    "chance": "^1.0.4",
+    "sinon": "^1.17.6"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-3"
+    ]
+  }
+}
